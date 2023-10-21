@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h2>Форма для додавання будинку</h2>
+
+  <form id="buildingForm">
+    <label for="flats">Кількість квартир:</label><br>
+    <input type="number" id="flats" name="flats"><br>
+    <input type="submit" value="Створити будинок">
+  </form>
+  
+  <div id="flatForms"></div>
+  
+  <button onclick="displayData()" style="display:none;" id="displayButton">Вивести дані про будинок</button>
+  
+  <p id="data"></p>
+
+  
+  <script src="app.js"></script>
+</body>
+</html>
