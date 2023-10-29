@@ -4,23 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h2>Форма для додавання будинку</h2>
+  <h1 class="h2">Форма для додавання будинку</h1>
 
   <form id="buildingForm">
-    <label for="flats">Кількість квартир:</label><br>
-    <input type="number" id="flats" name="flats"><br>
-    <input type="submit" value="Створити будинок">
+    <h2 for="flats">Кількість квартир:</h2><br>
+
+    <!-- <input type="number" id="flats" name="flats"><br> -->
+    <div class="number-control">
+      <div class="number-left"></div>
+      <input type="number" name="number" id="flats" class="number-quantity">
+      <div class="number-right"></div>
+    </div>  
+
+    <!-- <input type="submit" value="Створити будинок" class="voltage-button"> -->
+    <button class="button">
+      <span class="button-content voltage-button" >Створити будинок </span>
+   </button>
   </form>
   
   <div id="flatForms"></div>
   
-  <button onclick="displayData()" style="display:none;" id="displayButton">Вивести дані про будинок</button>
+  <!-- <button onclick="displayData()" style="display:none;" id="displayButton" >Вивести дані про будинок</button> -->
+  <button onclick="displayData()" style="display:none;" id="displayButton">
+    <span class="button_top"> Вивести дані про будинок
+    </span>
+  </button>
   
   <p id="data"></p>
 
   
-  <script src="app.js"></script>
+  <script src="/js/app.js"></script>
 </body>
 </html>
